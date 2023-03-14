@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
 
 def event_page(request):
     event_title = "one8 Run, Bengaluru"
@@ -16,3 +18,15 @@ def event_page(request):
     }
     
     return render(request, 'event_page.html', context)
+
+def login(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Account created for {username}!')
+            return redirect('home')
+    else:
+        form = UserCreationForm()
+    return render(request, 'login_page.html', {'form': form})
