@@ -83,6 +83,7 @@ body {
   }
 
  .register-btn {
+  margin-top: 0px;
   background-color: #363636;
   color: white;
   box-sizing: border-box;
