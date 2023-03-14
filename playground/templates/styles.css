@@ -1,0 +1,39 @@
+.event-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .event-description {
+    font-size: 1.2rem;
+  }
+  
+  .event-details {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .event-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .event-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .event-details li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }

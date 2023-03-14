@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Event Page{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <!-- Large column for event info -->
+    <div class="col-lg-8">
+      <img src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_800/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1675684680%2Fck0c50017okuuynsxtrv.jpg" alt="Event Photo" class="img-fluid">
+      <h1 class="event-title">{{ event_title }}</h1>
+      <p class="event-description">
+        {{ event_description }}
+      </p>
+    </div>
+    
+    <!-- Small column for event details -->
+    <div class="col-lg-4">
+      <div class="event-details">
+        <h2>Event Details</h2>
+        <ul>
+          <li><strong>Date:</strong> {{ event_date }}</li>
+          <li><strong>Time:</strong> {{ event_time }}</li>
+          <li><strong>Venue:</strong> {{ event_venue }}</li>
+        </ul>
+        <button class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
