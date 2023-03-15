@@ -7,14 +7,18 @@ h1 {
   margin-top: 50px;
 }
 form {
+  margin-right:300px ;
   margin: 50px auto;
   width: 400px;
-  padding: 20px;
+  padding :30px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 .form-group {
+  
+  width:100%;
+  border: #323638;
   margin-bottom: 20px;
 }
 label {
@@ -22,7 +26,7 @@ label {
   margin-bottom: 5px;
 }
 input {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -30,14 +34,15 @@ input {
 }
 button[type="submit"] {
   display: block;
-  width: 100%;
+  width: 20%;
+  margin:auto;
   padding: 10px;
-  background-color: #008CBA;
+  background-color: #345464;
   color: #fff;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 button[type="submit"]:hover {
-  background-color: #005D6E;
+  background-color: #414c4e;
 }
