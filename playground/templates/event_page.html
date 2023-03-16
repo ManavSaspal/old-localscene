@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Event Page</title>
+    <title>LocalScene</title>
 
     <link rel="stylesheet" href="{% static 'event_styles.css' %}">
   </head>
@@ -11,8 +11,8 @@
 
       <!-- Large column for event info -->
       <div class="desc-div">
-        <img src="https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_800/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1675684680%2Fck0c50017okuuynsxtrv.jpg" alt="Event Photo" class="img-fluid">
-        <h1 class="event-title">{{ event_title }}</h1>
+        <img src="{{ event_image }}" alt="Event Photo" class="event-image">
+        <h1 class="event-title">{{ event_name }}</h1>
         <p class="event-description">
           {{ event_description }}
         </p>
@@ -22,9 +22,10 @@
       <div class="details-div">
         <h2>Event Details</h2>
         <ul class = "details-list">
-          <li><strong>Date:</strong> {{ event_date }}</li>
           <li><strong>Time:</strong> {{ event_time }}</li>
           <li><strong>Venue:</strong> {{ event_venue }}</li>
+          <li><strong>State:</strong> {{ event_state }}</li>
+
         </ul>
         <button class="register-btn">Register</button>
       </div>

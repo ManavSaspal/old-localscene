@@ -1,7 +1,11 @@
 from django.urls import path 
 from . import views 
+from playground.models import *
 
 urlpatterns = [
-    path('event/',views.event_page),
     path('login/', views.login)
 ]
+
+for obj in Event.objects.all():
+    urlpatterns.append(path(obj.slug, views.event_page))
+
